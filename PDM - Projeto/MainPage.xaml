@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDM___Projeto.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="0, 100"
+            Spacing="5"
+            BackgroundColor="#99d1ff">
+            <Image
+                Source="clima.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+            <Label
+                x:Name="CidadeLabel"
+                Text=""
+                FontSize="32"
+                FontFamily="RobotoRegular"
+                TextColor="#242424"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            
+            <Label
+                Margin="0, 0, 0, 20"
+                x:Name="TemperatureLabel"
+                Text="Carregando..."
+                FontSize="72"
+                FontFamily="RobotoBold"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+
+            <Label
+                Margin="0, 0, 0, 20"
+                x:Name="ConditionLabel"
+                Text="Condição: Carregando..."
+                FontSize="24"
+                FontFamily="RobotoRegular"
+                TextColor="#424242"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+
+            <Label
+                x:Name="MaxTempLabel"
+                Text="Máxima: Carregando..."
+                FontSize="20"
+                FontFamily="RobotoRegular"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+
+            <Label
+                x:Name="MinTempLabel"
+                Text="Mínima: Carregando..."
+                FontSize="20"
+                FontFamily="RobotoRegular"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+            <Button
+                Margin="0, 50"
+                Text="Escolher Cidade"
+                FontSize="20"
+                TextColor="White"
+                BackgroundColor="#007BFF"
+                CornerRadius="10"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Clicked="OnSelectCityClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
